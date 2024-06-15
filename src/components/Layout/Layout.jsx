@@ -1,9 +1,10 @@
 import React, { Suspense } from 'react';
+import { RotatingLines } from 'react-loader-spinner';
 import { Outlet } from 'react-router-dom';
 
 const Layout = () => {
   return (
-    <Suspense fallback={<div>'Loading...'</div>}>
+    <Suspense fallback={<RotatingLines/>}>
       <div>Layout</div>
       <Outlet/>
     </Suspense>
