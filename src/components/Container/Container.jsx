@@ -1,8 +1,8 @@
-import React from 'react'
+import { MainBox } from './Container.styled'
 
 const Container = ({children}) => {
   return (
-    <div>{children}</div>
+    <MainBox>{children}</MainBox>
   )
 }
 
