@@ -1,15 +1,17 @@
 @import-normalize; /* bring in normalize.css styles */
 
-
-:root{
+:root {
   /* colors */
   --cl-main-color: #212121;
-  --cl-secondary-color: #ffffff;
+  --cl-secondary-color: #b2b0b0;
   --cl-border-color: #7ca1c5;
   --cl-accent-color: #cd531b;
+  --cl-start-color: #fbf8f8;
+  --cl-end-color: #ece8e0;
+  --cl-bg-color: #f8f9fc;
 
   /* animat */
-  --animat: 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  --animat: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
   margin: 0;
@@ -47,6 +49,6 @@ img {
 ul {
   list-style: none;
 }
-a{
+a {
   text-decoration: none;
 }

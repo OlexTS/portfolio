@@ -8,11 +8,18 @@ const linkStyles = `
   color: var(--cl-main-color);
   transition: color var(--animat);
 
+  // &:hover,
+  // &:focus {
+  //   color: var(-cl-accent-color);
+  // }
+`;
+const hoverFocusStyles = `
+  transition: var(--animat);
   &:hover,
   &:focus {
-    color: var(-cl-accent-color);
+    color: var(--cl-accent-color);
   }
-`;
+`
 
 export const Nav = styled.nav`
   @media (max-width: 767px) {
@@ -27,7 +34,7 @@ export const Nav = styled.nav`
     opacity: ${({ toggleMenu }) => (toggleMenu ? 1 : 0)};
     pointer-events: ${({ toggleMenu }) => (toggleMenu ? 'auto' : 'none')};
     text-align: center;
-    background-color: #bfb8b8;
+    background-color: var(--cl-bg-color);
   }
 
   @media (min-width: 768px) {
@@ -40,22 +47,23 @@ export const Nav = styled.nav`
   }
 `;
 export const BtnMenu = styled.div`
+  ${hoverFocusStyles}
   @media (min-width: 768px) {
     display: none;
   }
 `;
 
 export const LinkResume = styled.a`
-  ${linkStyles}
+  ${linkStyles};
+  ${hoverFocusStyles}
 `;
 export const Link = styled(NavLink)`
   ${linkStyles}
+  ${hoverFocusStyles}
   &.active {
     color: var(--cl-accent-color);
   }
   @media (max-width: 767px) {
     margin-bottom: 20px;
   }
-
-
 `;

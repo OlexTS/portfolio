@@ -1,9 +1,12 @@
-import { MainBox } from './Container.styled'
+import PropTypes from 'prop-types';
+import { MainBox } from './Container.styled';
 
-const Container = ({children}) => {
-  return (
-    <MainBox>{children}</MainBox>
-  )
-}
+const Container = ({ children }) => {
+  return <MainBox>{children}</MainBox>;
+};
 
-export default Container
+Container.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
+export default Container;
