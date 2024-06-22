@@ -5,7 +5,6 @@ const Footer = () => {
     <FooterBox>
       <p>
         {new Date().getFullYear()} {'Copyright © developed by '}{''}<Text>Olexandr Tsapuk </Text>
-        <img src="." alt="" />
       </p>
     </FooterBox>
   );

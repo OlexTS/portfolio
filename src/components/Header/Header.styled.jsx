@@ -19,8 +19,10 @@ export const HeaderBox = styled.header`
     padding: 0 50px;
     min-height: 80px;
   }
+`;
 
-  &:hover img {
+export const Logo = styled.img`
+  &:hover {
     transition: transform var(--animat);
     transform: scale(1.2);
   }

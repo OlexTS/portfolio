@@ -1,12 +1,12 @@
 import Navigation from 'components/Navigation/Navigation';
 import logo from '../../images/logo.png'
-import { HeaderBox } from './Header.styled';
+import { HeaderBox, Logo } from './Header.styled';
 
 const Header = () => {
   return (
     <HeaderBox>
       <a href="/portfolio" aria-label="Logo">
-        <img
+        <Logo
           src={logo}
           alt="Logo"
           width="40"
