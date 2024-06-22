@@ -1,8 +1,9 @@
-import React from 'react'
+import Error from "components/Error/Error"
+
 
 const NotFound = () => {
   return (
-    <div>NotFound</div>
+    <Error/>
   )
 }
 

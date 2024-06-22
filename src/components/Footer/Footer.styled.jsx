@@ -13,6 +13,7 @@ export const FooterBox = styled.footer`
     var(--cl-start-color),
     var(--cl-end-color)
   );
+  opacity: 0.7;
 
   @media (min-width: 768px) {
     padding: 0 50px;
@@ -21,7 +22,7 @@ export const FooterBox = styled.footer`
 `;
 
 export const Text = styled.span`
-font-weight: 500;
+  font-weight: 500;
   transition: var(--animat);
   &:hover,
   &:focus {

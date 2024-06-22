@@ -9,6 +9,7 @@ export const HeaderBox = styled.header`
   padding: 10px 30px;
   border-bottom: 1px solid var(--cl-border-color);
   background-image: linear-gradient(to right, var(--cl-start-color), var(--cl-end-color));
+  opacity: 0.7;
 
   @media (min-width: 768px) {
     padding: 0 50px;

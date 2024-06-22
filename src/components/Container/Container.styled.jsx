@@ -6,7 +6,7 @@ export const MainBox = styled.div`
   justify-content: space-between;
   margin: 0 auto;
   height: 100vh;
-  padding: 20px 10px;
+  /* padding: 20px 10px; */
   text-align: center;
 
   /* @media  (min-width: 768px) {
