@@ -4,7 +4,7 @@ import { Spinner } from './Loader.styled';
 const Loader = () => {
   return (
     <Spinner>
-      <RotatingLines />
+      <RotatingLines strokeColor='orange' width='150' height='150'/>
     </Spinner>
   );
 };
