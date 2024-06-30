@@ -13,7 +13,7 @@ export const HeaderBox = styled.header`
     var(--cl-start-color),
     var(--cl-end-color)
   );
-  opacity: 0.7;
+  opacity: 0.9;
 
   @media (min-width: 768px) {
     padding: 0 50px;
