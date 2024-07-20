@@ -55,3 +55,6 @@ export const Skills = styled.section`
 export const Title = styled.h2`
     margin-bottom: 20px;
 `
+export const MyContacts = styled.section`
+    padding: 20px 10px;
+`
