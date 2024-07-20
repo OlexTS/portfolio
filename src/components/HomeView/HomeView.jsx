@@ -1,6 +1,7 @@
 import React from 'react';
 import hero from '../../images/hero.png';
-import { Hero, MainTitle, Text, Box } from './HomeView.styled';
+import { Hero, MainTitle, Text, Box, Skills, Title } from './HomeView.styled';
+import TechSkills from 'components/TechSkills/TechSkills';
 
 const HomeView = () => {
   return (
@@ -11,9 +12,13 @@ const HomeView = () => {
           <Text>My name is Olexandr and I'm a Frontend Developer!</Text>
         </Box>
         <div>
-          <img src={hero} alt="Olexandr Tsapuk" width={460}/>
+          <img src={hero} alt="Olexandr Tsapuk" width={460} />
         </div>
       </Hero>
+      <Skills>
+        <Title>MY TECH SKILLS</Title>
+        <TechSkills />
+      </Skills>
     </main>
   );
 };

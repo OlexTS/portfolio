@@ -49,3 +49,9 @@ export const Box = styled.div`
        text-align: start;
 }
 `
+export const Skills = styled.section`
+    padding: 20px 10px;
+`
+export const Title = styled.h2`
+    margin-bottom: 20px;
+`
