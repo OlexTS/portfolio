@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/986.9f3e74a9.chunk.js","mappings":"iKAQA,UANqB,WACnB,OACEA,EAAAA,EAAAA,KAAA,OAAAC,SAAK,gBAET,C","sources":["components/pages/ProjectsPage.jsx"],"sourcesContent":["import React from 'react'\n\nconst ProjectsPage = () => {\n  return (\n    <div>ProjectsPage</div>\n  )\n}\n\nexport default ProjectsPage"],"names":["_jsx","children"],"sourceRoot":""}
