@@ -18,7 +18,7 @@ export const MainTitle = styled.h1`
     font-size: 28px;
     margin-bottom: 10px;
     line-height: 1.1;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.2em;
 
     @media (min-width: 768px){
         font-size: 38px;
@@ -34,6 +34,7 @@ export const Text = styled.p`
     color: var(--cl-secondary-color);
     font-size: 20px;
     line-height: 1.1;
+font-family: cursive;
 
     @media (min-width: 768px){
         font-size: 30px;
