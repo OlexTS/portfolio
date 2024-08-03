@@ -20,8 +20,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('./images/bg_img.jpg');
-  background-position: center;
+  background-image: url('./images/bg_img.webp');
   background-size: cover;
 }
 

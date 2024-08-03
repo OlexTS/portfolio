@@ -1,10 +1,10 @@
-import webstudio from '../images/projects/webstudio.png';
-import foodsta from '../images/projects/foodSta.png';
-import filmoteka from '../images/projects/filmoteka.png';
-import imagefinder from '../images/projects/imageFinder.png';
-import movies from '../images/projects/movies.png';
-import phonebook from '../images/projects/phonebook.png';
-import yourpet from '../images/projects/yourPet.png'
+import webstudio from '../images/projects/webstudio.webp';
+import foodsta from '../images/projects/foodSta.webp';
+import filmoteka from '../images/projects/filmoteka.webp';
+import imagefinder from '../images/projects/imageFinder.webp';
+import movies from '../images/projects/movies.webp';
+import phonebook from '../images/projects/phonebook.webp';
+import yourpet from '../images/projects/yourPet.webp'
 
 const { nanoid } = require('nanoid');
 

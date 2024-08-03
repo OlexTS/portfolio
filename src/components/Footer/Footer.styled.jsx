@@ -8,6 +8,7 @@ export const FooterBox = styled.footer`
   padding: 10px 30px;
   color: var(--cl-secondary-color);
   border-top: 1px solid var(--cl-border-color);
+  
   background-image: linear-gradient(
     to right,
     var(--cl-start-color),
