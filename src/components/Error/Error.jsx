@@ -1,8 +1,12 @@
-
+import error from '../../images/notFound.webp';
+import { Box, Img, Text } from './Error.styled';
 const Error = () => {
   return (
-    <div>Error</div>
-  )
-}
+    <Box>
+      <Img src={error} alt="Not found"/>
+      <Text>Page not found 😠</Text>
+    </Box>
+  );
+};
 
-export default Error
+export default Error;
