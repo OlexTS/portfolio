@@ -18,7 +18,7 @@ export const Text = styled.p`
   font-size: 20px;
   font-weight: 500;
   @media (min-width: 768px) {
-    font-size: 26px;
+    font-size: 24px;
   }
   @media (min-width: 1280px) {
     font-size: 36px;
