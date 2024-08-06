@@ -30,7 +30,7 @@ const Contacts = () => {
       </li>
       <li>
         <Link
-          href="www.linkedin.com/in/olexandr-tsapuk"
+          href="https://linkedin.com/in/olexandr-tsapuk"
           aria-label="LinkedIn"
           target="_blank"
           rel="noopener noreferrer"

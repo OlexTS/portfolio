@@ -5,7 +5,7 @@ import { HeaderBox, Logo } from './Header.styled';
 const Header = () => {
   return (
     <HeaderBox>
-      <a href="/portfolio" aria-label="Logo">
+      <a href="/" aria-label="Logo">
         <Logo
           src={logo}
           alt="Logo"
