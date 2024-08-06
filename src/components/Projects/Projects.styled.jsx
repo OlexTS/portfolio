@@ -8,7 +8,7 @@ export const List = styled.ul`
    
 `
 
-export const Card = styled.div`
+export const Card = styled.li`
     /* display: flex;
     flex-direction: column;
     justify-content: center;

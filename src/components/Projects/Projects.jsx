@@ -5,6 +5,7 @@ import { Card } from './Projects.styled';
 import { projects } from 'helpers/projects';
 import { List } from 'components/Contacts/Contacts.styled';
 import ScrollButton from 'components/ScrollButton/ScrollButton';
+import { nanoid } from 'nanoid';
 
 const Projects = () => {
   return (
@@ -39,13 +40,13 @@ const Projects = () => {
                       </a>
                     </div>
                     <div>{description}</div>
-                    <div>
+                    <ul>
                       {technologies.map(el => (
-                        <div>
+                        <li key={nanoid()}>
                           <p>{el}</p>
-                        </div>
+                        </li>
                       ))}
-                    </div>
+                    </ul>
                   </Card>
                 )
               )}
@@ -79,13 +80,13 @@ const Projects = () => {
                       </a>
                     </div>
                     <div>{description}</div>
-                    <div>
+                    <ul>
                       {technologies.map(el => (
-                        <div>
+                        <li key={nanoid()}>
                           <p>{el}</p>
-                        </div>
+                        </li>
                       ))}
-                    </div>
+                    </ul>
                   </Card>
                 )
               )}
