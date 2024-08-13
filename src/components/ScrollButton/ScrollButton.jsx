@@ -14,10 +14,9 @@ const ScrollButton = () => {
           alignItems: 'center',
           justifyContent: 'center',
           backgroundColor: 'transparent',
-          // color: 'white',
           borderRadius: '100%',
-          width: '50px',
-          height: '50px',
+          width: '60px',
+          height: '60px',
         }}
         component={<PiArrowCircleUpBold size={40} color="orange" />}
       />
