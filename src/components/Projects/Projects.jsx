@@ -1,19 +1,18 @@
 import React from 'react';
+import { nanoid } from 'nanoid';
 import { FaGithub } from 'react-icons/fa6';
 import { FaExternalLinkAlt } from 'react-icons/fa';
-import { Card } from './Projects.styled';
+import { Card, ProjectsBox, Title, TeamProjectsBox } from './Projects.styled';
 import { projects } from 'helpers/projects';
 import { List } from 'components/Contacts/Contacts.styled';
 import ScrollButton from 'components/ScrollButton/ScrollButton';
-import { nanoid } from 'nanoid';
 
 const Projects = () => {
   return (
     <>
-      <h1>MY PROJECTS</h1>
-      <div>
-        <div>
-          <h2>TEAM PROJECTS</h2>
+       <ProjectsBox>
+        <TeamProjectsBox>
+          <Title>TEAM PROJECTS</Title>
           <List>
             {projects
               .filter(el => el.workDetails === 'Team project')
@@ -51,9 +50,9 @@ const Projects = () => {
                 )
               )}
           </List>
-        </div>
+        </TeamProjectsBox>
         <div>
-          <h2>PERSONAL PROJECTS</h2>
+          <Title>PERSONAL PROJECTS</Title>
           <List>
             {projects
               .filter(el => el.workDetails === 'Personal project')
@@ -92,7 +91,7 @@ const Projects = () => {
               )}
           </List>
         </div>
-      </div>
+      </ProjectsBox>
       <ScrollButton/>
     </>
   );

@@ -7,6 +7,7 @@ export const HeaderBox = styled.header`
   justify-content: space-between;
   min-height: 60px;
   padding: 10px 30px;
+  margin-bottom: 20px;
   border-bottom: 1px solid var(--cl-border-color);
   background-image: linear-gradient(
     to right,
@@ -18,6 +19,10 @@ export const HeaderBox = styled.header`
   @media (min-width: 768px) {
     padding: 0 50px;
     min-height: 80px;
+    margin-bottom: 40px;
+  }
+  @media (min-width: 1280px) {
+    margin-bottom: 60px;
   }
 `;
 
