@@ -2,15 +2,24 @@ import React from 'react';
 import { nanoid } from 'nanoid';
 import { FaGithub } from 'react-icons/fa6';
 import { FaExternalLinkAlt } from 'react-icons/fa';
-import { Card, ProjectsBox, Title, TeamProjectsBox } from './Projects.styled';
+import {
+  List,
+  Card,
+  ProjectsBox,
+  Title,
+  TeamProjectsBox,
+  CardTitle,
+  ListTechnologies,
+  ItemThechnology,
+  LinkContainer, Image
+} from './Projects.styled';
 import { projects } from 'helpers/projects';
-import { List } from 'components/Contacts/Contacts.styled';
 import ScrollButton from 'components/ScrollButton/ScrollButton';
 
 const Projects = () => {
   return (
     <>
-       <ProjectsBox>
+      <ProjectsBox>
         <TeamProjectsBox>
           <Title>TEAM PROJECTS</Title>
           <List>
@@ -28,24 +37,24 @@ const Projects = () => {
                   image,
                 }) => (
                   <Card key={id}>
-                    <p>{label}</p>
-                    <img src={image} width={700} alt={label} />
-                    <div>
+                    <CardTitle>{label}</CardTitle>
+                    <Image src={image}  alt={label} />
+                    <LinkContainer>
                       <a href={codeLink}>
                         <FaGithub size={40} />
                       </a>
                       <a href={siteLink}>
                         <FaExternalLinkAlt size={40} />
                       </a>
-                    </div>
+                    </LinkContainer>
                     <div>{description}</div>
-                    <ul>
+                    <ListTechnologies>
                       {technologies.map(el => (
-                        <li key={nanoid()}>
+                        <ItemThechnology key={nanoid()}>
                           <p>{el}</p>
-                        </li>
+                        </ItemThechnology>
                       ))}
-                    </ul>
+                    </ListTechnologies>
                   </Card>
                 )
               )}
@@ -68,31 +77,31 @@ const Projects = () => {
                   image,
                 }) => (
                   <Card key={id}>
-                    <p>{label}</p>
-                    <img src={image} width={700} alt={label} />
-                    <div>
+                    <CardTitle>{label}</CardTitle>
+                    <Image src={image}  alt={label} />
+                    <LinkContainer>
                       <a href={codeLink}>
                         <FaGithub size={40} />
                       </a>
                       <a href={siteLink}>
                         <FaExternalLinkAlt size={40} />
                       </a>
-                    </div>
+                    </LinkContainer>
                     <div>{description}</div>
-                    <ul>
+                    <ListTechnologies>
                       {technologies.map(el => (
-                        <li key={nanoid()}>
+                        <ItemThechnology key={nanoid()}>
                           <p>{el}</p>
-                        </li>
+                        </ItemThechnology>
                       ))}
-                    </ul>
+                    </ListTechnologies>
                   </Card>
                 )
               )}
           </List>
         </div>
       </ProjectsBox>
-      <ScrollButton/>
+      <ScrollButton />
     </>
   );
 };
