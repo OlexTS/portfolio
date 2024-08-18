@@ -11,7 +11,7 @@ import {
   CardTitle,
   ListTechnologies,
   ItemThechnology,
-  LinkContainer, Image
+  LinkContainer,Image, Link, Description
 } from './Projects.styled';
 import { projects } from 'helpers/projects';
 import ScrollButton from 'components/ScrollButton/ScrollButton';
@@ -38,16 +38,16 @@ const Projects = () => {
                 }) => (
                   <Card key={id}>
                     <CardTitle>{label}</CardTitle>
-                    <Image src={image}  alt={label} />
+                    <Image src={image} width={500} height={400} alt={label} />
                     <LinkContainer>
-                      <a href={codeLink}>
-                        <FaGithub size={40} />
-                      </a>
-                      <a href={siteLink}>
-                        <FaExternalLinkAlt size={40} />
-                      </a>
+                      <Link href={codeLink}>
+                        <FaGithub size={30} />
+                      </Link>
+                      <Link href={siteLink}>
+                        <FaExternalLinkAlt size={30} />
+                      </Link>
                     </LinkContainer>
-                    <div>{description}</div>
+                    <Description>{description}</Description>
                     <ListTechnologies>
                       {technologies.map(el => (
                         <ItemThechnology key={nanoid()}>
@@ -78,16 +78,16 @@ const Projects = () => {
                 }) => (
                   <Card key={id}>
                     <CardTitle>{label}</CardTitle>
-                    <Image src={image}  alt={label} />
+                    <Image src={image} width={500} height={400} alt={label} />
                     <LinkContainer>
-                      <a href={codeLink}>
-                        <FaGithub size={40} />
-                      </a>
-                      <a href={siteLink}>
-                        <FaExternalLinkAlt size={40} />
-                      </a>
+                      <Link href={codeLink}>
+                        <FaGithub size={30} />
+                      </Link>
+                      <Link href={siteLink}>
+                        <FaExternalLinkAlt size={30} />
+                      </Link>
                     </LinkContainer>
-                    <div>{description}</div>
+                    <Description>{description}</Description>
                     <ListTechnologies>
                       {technologies.map(el => (
                         <ItemThechnology key={nanoid()}>

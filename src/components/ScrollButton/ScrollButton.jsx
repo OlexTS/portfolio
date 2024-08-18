@@ -13,12 +13,13 @@ const ScrollButton = () => {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          backgroundColor: 'transparent',
+          backgroundColor: '#fbf6e7',
+          opacity: 0.7,
           borderRadius: '100%',
-          width: '60px',
-          height: '60px',
+          width: '50px',
+          height: '50px',
         }}
-        component={<PiArrowCircleUpBold size={40} color="orange" />}
+        component={<PiArrowCircleUpBold size={30} color="orange" />}
       />
     </div>
   );

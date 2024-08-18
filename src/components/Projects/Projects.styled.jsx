@@ -42,16 +42,33 @@ export const List = styled.ul`
 `;
 
 export const Card = styled.li`
-  max-width: 700px;
-
-  border: 2px solid red;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  min-height: 500px;
+  /* border: 2px solid red; */
   border-radius: 15px;
   padding: 10px;
-  background-color: #f3fbfb;
+  background: linear-gradient(
+    to right,
+    var(--cl-start-color),
+    var(--cl-end-color)
+  );;
+  box-shadow: 10px 5px 15px #b4baba;
+
+  @media (min-width: 768px) {
+    max-width: 500px;
+    max-height: 600px;
+  }
 `;
 
 export const Image = styled.img`
-  
+  @media (min-width: 768px) {
+    height: 280px;
+    width: 100%;
+  }
 `;
 
 export const CardTitle = styled.p`
@@ -81,3 +98,20 @@ export const LinkContainer = styled.div`
   align-items: center;
   margin-bottom: 10px;
 `;
+
+export const Link = styled.a`
+  transition: var(--animat);
+  &:hover,
+  :focus {
+    color: var(--cl-accent-color);
+  }
+`;
+
+export const Description = styled.p`
+  font-size: 16px;
+
+  @media (min-width: 768px){
+    /* font-family: cursive; */
+    font-size: 18px;
+  }
+`

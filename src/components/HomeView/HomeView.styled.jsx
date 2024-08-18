@@ -30,7 +30,7 @@ export const MainTitle = styled.h1`
 `;
 export const Text = styled.p`
   color: var(--cl-secondary-color);
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1.1;
   font-family: cursive;
 
@@ -55,11 +55,11 @@ export const Title = styled.h2`
   margin-bottom: 20px;
   font-size: 20px;
   letter-spacing: 0.2em;
-  @media(min-width: 768px){
-font-size:24px;
+  @media (min-width: 768px) {
+    font-size: 24px;
   }
-  @media(min-width: 1280px){
-font-size: 28px;
+  @media (min-width: 1280px) {
+    font-size: 28px;
   }
 `;
 export const MyContacts = styled.section`
