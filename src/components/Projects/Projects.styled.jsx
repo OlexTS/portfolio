@@ -15,12 +15,12 @@ export const Title = styled.h2`
   }
 `;
 export const TeamProjectsBox = styled.div`
-  margin-bottom: 20px;
+  margin-bottom: 80px;
   @media (min-width: 768px) {
-    margin-bottom: 40px;
+    margin-bottom: 80px;
   }
   @media (min-width: 1280px) {
-    margin-bottom: 60px;
+    margin-bottom: 100px;
   }
 `;
 
@@ -30,7 +30,7 @@ export const List = styled.ul`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 60px;
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -46,8 +46,8 @@ export const Card = styled.li`
   justify-content: space-between;
   flex-direction: column;
   width: 100%;
-  max-width: 500px;
-  min-height: 500px;
+  max-width: 400px;
+  min-height: 400px;
   /* border: 2px solid red; */
   border-radius: 15px;
   padding: 10px;
@@ -55,12 +55,12 @@ export const Card = styled.li`
     to right,
     var(--cl-start-color),
     var(--cl-end-color)
-  );;
+  );
   box-shadow: 10px 5px 15px #b4baba;
 
   @media (min-width: 768px) {
     max-width: 500px;
-    max-height: 600px;
+    min-height: 500px;
   }
 `;
 
@@ -110,8 +110,8 @@ export const Link = styled.a`
 export const Description = styled.p`
   font-size: 16px;
 
-  @media (min-width: 768px){
+  @media (min-width: 768px) {
     /* font-family: cursive; */
     font-size: 18px;
   }
-`
+`;
