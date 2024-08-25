@@ -19,19 +19,21 @@ const hoverFocusStyles = `
   &:focus {
     color: var(--cl-accent-color);
   }
-`
+`;
 
 export const Nav = styled.nav`
+  display: ${({ toggleMenu }) => (toggleMenu ? 'block' : 'none')};
   @media (max-width: 767px) {
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 1000;
 
     padding: 60px 0;
     transition: opacity var(--animat);
     opacity: ${({ toggleMenu }) => (toggleMenu ? 1 : 0)};
+    visibility: ${({ toggleMenu }) => (toggleMenu ? 'visible' : 'hidden')};
     pointer-events: ${({ toggleMenu }) => (toggleMenu ? 'auto' : 'none')};
     text-align: center;
     background-color: var(--cl-bg-color);
