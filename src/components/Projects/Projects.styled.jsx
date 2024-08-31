@@ -65,6 +65,7 @@ export const Card = styled.li`
 `;
 
 export const Image = styled.img`
+object-fit: contain;
   @media (min-width: 768px) {
     height: 280px;
     width: 100%;

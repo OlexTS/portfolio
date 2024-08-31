@@ -23,10 +23,22 @@ export const FooterBox = styled.footer`
 `;
 
 export const Text = styled.span`
+display: inline-block;
+margin-left: 5px;
   font-weight: 500;
   transition: var(--animat);
   &:hover,
   &:focus {
     color: var(--cl-accent-color);
   }
+  
+  @keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+  animation: pulse 3s ease-in-out infinite;
 `;

@@ -20,9 +20,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(45deg, to left, rgb(243, 245, 247), rgb(246, 247, 230));
+  background: linear-gradient(
+    45deg,
+    to left,
+    rgb(243, 245, 247),
+    rgb(246, 247, 230)
+  );
   /* background-image: url('./images/bg_img.webp'); */
-    /* background-size: cover; */
+  /* background-size: cover; */
 }
 
 code {
